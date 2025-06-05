@@ -19,7 +19,7 @@ MoodMate is a web-based mood tracking application that helps users monitor their
 
 ### Frontend:
 - HTML5  
-- CSS3  
+- CSS
 
 ### Backend (Optional / Planned):
 - Node.js (planned)  
