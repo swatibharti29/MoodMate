@@ -1,0 +1,177 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9ff;
+  color: #333;
+}
+
+nav {
+  background-color: #6c63ff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.hero {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: white;
+  color: #6c63ff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e6e6ff;
+}
+
+.tracker-preview {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #fff;
+}
+
+.tracker-preview img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.features {
+  padding: 4rem 2rem;
+  background-color: #f0f4ff;
+  text-align: center;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+}
+
+.card i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #6c63ff;
+}
+
+.testimonials {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.testimonial-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.testimonial {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  background: #f9f9ff;
+  border-left: 4px solid #6c63ff;
+  padding: 1.5rem;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.newsletter {
+  background: linear-gradient(to right, #6c63ff, #9d91ff);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.newsletter input {
+  padding: 0.8rem;
+  width: 250px;
+  border: none;
+  border-radius: 25px;
+  margin-right: 1rem;
+}
+
+.newsletter button {
+  padding: 0.8rem 1.5rem;
+  background-color: white;
+  color: #6c63ff;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer .socials a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer .socials a:hover {
+  color: #9d91ff;
+}

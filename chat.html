@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Chat | MoodMate</title>
+  <link rel="stylesheet" href="css/chat.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="chat-container">
+    <h2>💬 Chat with MoodBot</h2>
+    <div class="chat-box" id="chat-box">
+      <div class="bot-msg">Hi! How are you feeling today?</div>
+    </div>
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Type your message..." />
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <script>
+    function sendMessage() {
+      const input = document.getElementById("userInput");
+      const message = input.value.trim();
+      if (message === "") return;
+
+      const chatBox = document.getElementById("chat-box");
+
+      // User message bubble
+      const userMsg = document.createElement("div");
+      userMsg.className = "user-msg";
+      userMsg.textContent = message;
+      chatBox.appendChild(userMsg);
+
+      // Clear input
+      input.value = "";
+
+      // Scroll to bottom
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      // Simulate MoodBot typing
+      const botTyping = document.createElement("div");
+      botTyping.className = "bot-msg typing";
+      botTyping.textContent = "MoodBot is typing...";
+      chatBox.appendChild(botTyping);
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      // Simulated reply delay
+      setTimeout(() => {
+        botTyping.remove();
+        const botReply = document.createElement("div");
+        botReply.className = "bot-msg";
+        botReply.textContent = "I'm here for you! Let's talk about it.";
+        chatBox.appendChild(botReply);
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }, 1200);
+    }
+  </script>
+</body>
+</html>

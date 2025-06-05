@@ -1,0 +1,111 @@
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right top, #d5d4ff, #f5f7ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft Gradient Bubbles */
+.background::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #bca7ff, #a58bff);
+  border-radius: 50%;
+  top: -80px;
+  left: -80px;
+  z-index: -1;
+  opacity: 0.4;
+}
+.background::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #ffdee9, #b5f3ff);
+  border-radius: 50%;
+  bottom: -50px;
+  right: -50px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* Form Container */
+.register-container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 350px;
+  width: 90%;
+}
+
+.register-container h2 {
+  color: #4B3DE5;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  font-size: 0.95rem;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+input:focus {
+  box-shadow: 0 0 5px #4B3DE5;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #4B3DE5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a2ec5;
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.login-link a {
+  color: #4B3DE5;
+  text-decoration: none;
+  font-weight: 500;
+}
